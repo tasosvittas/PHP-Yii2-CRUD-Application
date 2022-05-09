@@ -9,7 +9,7 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
-    <h1>CREATE NEW PRODUCT</h1>
+    <h1>UPDATE PRODUCT</h1>
     <div class="body-content">
         <?php $form= ActiveForm::begin()?>
         <div class="row">
@@ -44,7 +44,7 @@ $this->title = 'My Yii Application';
         <div class="row">
             <div class="form-group">
                 <div class="col-xl-12", style="margin-left: 0px",>
-                    <?= Html::submitButton('Create Product', ['class'=>'btn btn-primary']); ?>
+                    <?= Html::submitButton('Update Product', ['class'=>'btn btn-primary']); ?>
                     <a href=<?php echo yii::$app->homeUrl;?> class="btn btn-primary"> Go Back</a>
                 </div>
             </div>

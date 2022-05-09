@@ -12,7 +12,7 @@ use yii\db\ActiveRecord;
 
         public function rules(){
             return [
-                [['title','description','category'],'required']
+                [['id','title','description','category'],'required']
             ];
         }
     }

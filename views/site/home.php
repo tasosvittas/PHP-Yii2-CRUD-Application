@@ -6,8 +6,12 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
     <?php if(yii::$app->session->hasFlash('message')): ?>
-        <?php echo yii::$app->session->getFlash('message','Success'); ?>
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-bs-dismiss="alert"></button>
+        <?php echo yii::$app->session->getFlash('message'); ?>
+    </div>
     <?php endif; ?>
+
     <div class="jumbotron text-center bg-transparent">
         <h1 style="color: #337ab7;">Yii2 CRUD Application</h1>
     </div>
@@ -37,11 +41,9 @@ $this->title = 'My Yii Application';
                     <td><?php echo $post -> description; ?></td>
                     <td><?php echo $post -> category; ?></td>
                     <td>
-                        <span style="margin: 15px;">
-                            <?= Html::a('View', ['/site/view'], ['class'=>'btn btn-success'])?>
-                            <?= Html::a('Update', ['/site/update'], ['class'=>'btn btn-success'])?>
-                            <?= Html::a('Delete', ['/site/delete'], ['class'=>'btn btn-success'])?>
-                        </span>
+                        <span><?= Html::a('View', ['view', 'id' => $post->id], ['class'=>'btn btn-primary'])?></span>
+                        <span><?= Html::a('Update', ['update', 'id' => $post->id], ['class'=>'btn btn-success'])?></span>
+                        <span><?= Html::a('Delete', ['delete', 'id' => $post->id], ['class'=>'btn btn-danger'])?></span>
                     </td>
                 </tr>
                     <?php endforeach; ?>
