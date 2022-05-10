@@ -15,6 +15,9 @@ features to your application.
 
 I used the basic template of Yii 2 framework to create my own CRUD (Create, Read, Update, Delete) Application.
 
+You can also use [Gii](https://www.yiiframework.com/doc/guide/2.0/en/start-gii), an extension that creates automatically the CRUD by using a CRUD generator.
+
+
 [![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![build](https://github.com/yiisoft/yii2-app-basic/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-basic/actions?query=workflow%3Abuild)

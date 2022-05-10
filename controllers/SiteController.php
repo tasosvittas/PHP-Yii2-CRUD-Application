@@ -98,7 +98,7 @@ class SiteController extends Controller
         if($post->load(Yii::$app->request->post()) && $post->save())
         {
             Yii::$app->getSession()->setFlash('message', 'Product Updated Successfully.');
-            return $this->redirect(['index','id'=> $post->$id]);
+            return $this->redirect(['index']);
         }
         else
         {
